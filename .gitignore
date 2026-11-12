@@ -8,3 +8,5 @@ dist/
 build/
 .venv/
 .env
+test_quota.py
+test_widget.py

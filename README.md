@@ -2,6 +2,10 @@
 
 CodexMr 是一个 Windows 桌面悬浮窗，显示当前 ChatGPT 账号的 Codex 限额，支持贴边自动收起、透明度调节和浏览器登录。
 
+## 下载
+
+从 [GitHub Releases](https://github.com/xzy513/CodexMr/releases/latest) 下载 `CodexMr.exe`，双击运行。Windows 版已包含所需运行组件，无需另装 Python 或 Codex CLI；首次使用时根据提示在浏览器登录自己的 ChatGPT 账号。
+
 ## 使用
 
 - 左键拖动窗口，贴近屏幕边缘后自动收起；鼠标移到露出的边缘可展开。
@@ -19,10 +23,4 @@ python widget.py
 
 首次运行时按提示在浏览器登录 ChatGPT。程序使用独立的 `%LOCALAPPDATA%\CodexMr` 数据目录，登录凭据不会保存在项目目录中。该项目非 OpenAI 官方产品。
 
-运行测试：
-
-```powershell
-python -B -m unittest -v
-```
-
-此源码仓库不包含预编译 EXE。单文件版可通过 PyInstaller 构建，并需将 Windows 版 Codex CLI 作为 `codex-runtime/codex.exe` 一同打包。
+单文件版可通过 PyInstaller 构建，并需将 Windows 版 Codex CLI 作为 `codex-runtime/codex.exe` 一同打包。
